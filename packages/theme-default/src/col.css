@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import "./common/var.css";
+
+.vq-col-1, .vq-col-2, .vq-col-3, .vq-col-4, .vq-col-5, .vq-col-6, .vq-col-7, .vq-col-8, .vq-col-9, .vq-col-10, .vq-col-11, .vq-col-12, .vq-col-13, .vq-col-14, .vq-col-15, .vq-col-16, .vq-col-17, .vq-col-18, .vq-col-19, .vq-col-20, .vq-col-21, .vq-col-22, .vq-col-23, .vq-col-24 {
+  float: left;
+  box-sizing: border-box;
+}
+.vq-col-0 {
+  width: 0;
+}
+
+@for $i from 0 to 24 {
+  .vq-col-$i {
+    width: calc(1 / 24 * $(i) * 100)%;
+  }
+  .vq-col-offset-$i {
+    margin-left: calc(1 / 24 * $(i) * 100)%;
+  }
+  .vq-col-pull-$i {
+    position: relative;
+    right: calc(1 / 24 * $(i) * 100)%;
+  }
+  .vq-col-push-$i {
+    position: relative;
+    left: calc(1 / 24 * $(i) * 100)%;
+  }
+}
+
+@media (max-width: 768px) {
+  @for $i from 0 to 24 {
+    .vq-col-xs-$i {
+      width: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-xs-offset-$i {
+      margin-left: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-xs-pull-$i {
+      position: relative;
+      right: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-xs-push-$i {
+      position: relative;
+      left: calc(1 / 24 * $(i) * 100)%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 0 to 24 {
+    .vq-col-sm-$i {
+      width: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-sm-offset-$i {
+      margin-left: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-sm-pull-$i {
+      position: relative;
+      right: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-sm-push-$i {
+      position: relative;
+      left: calc(1 / 24 * $(i) * 100)%;
+    }
+  }
+}
+@media (min-width: 992px) {
+  @for $i from 0 to 24 {
+    .vq-col-md-$i {
+      width: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-md-offset-$i {
+      margin-left: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-md-pull-$i {
+      position: relative;
+      right: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-md-push-$i {
+      position: relative;
+      left: calc(1 / 24 * $(i) * 100)%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  @for $i from 0 to 24 {
+    .vq-col-lg-$i {
+      width: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-lg-offset-$i {
+      margin-left: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-lg-pull-$i {
+      position: relative;
+      right: calc(1 / 24 * $(i) * 100)%;
+    }
+    .vq-col-lg-push-$i {
+      position: relative;
+      left: calc(1 / 24 * $(i) * 100)%;
+    }
+  }
+}

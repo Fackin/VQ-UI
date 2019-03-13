@@ -1,0 +1,16 @@
+{
+  "首页": [
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
+    }
+  ],
+  "开始指南": [
+    {
+      "name": "test",
+      "path": "/test",
+      "desc": "测试"
+    }
+  ]
+}
