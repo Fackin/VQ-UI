@@ -1,0 +1,64 @@
+@import "common/var.css";
+
+@b vq {
+  @e anglesign {
+    font-size: 10px;
+    line-height: 17px;
+    background: var(--color-primary);
+    position: absolute;
+    z-Index: 2;
+    padding: 0 1.5em;
+    text-indent: 0;
+    text-align: center;
+    color: var(--color-white);
+
+    &.is-hidden {
+       display: none;
+    }
+
+    @m lt {
+      left: 0;
+      top: 0;
+      -webkit-transform-origin: right bottom;
+      -moz-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: translate(-29.29%,-100%) rotate(-45deg);
+      -moz-transform: translate(-29.29%,-100%) rotate(-45deg);
+      transform: translate(-29.29%,-100%) rotate(-45deg);
+    }
+
+    @m rt{
+      right: 0;
+      top: 0;
+      -webkit-transform-origin: left bottom;
+      -moz-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transform: translate(29.29%,-100%) rotate(45deg);
+      -moz-transform: translate(29.29%,-100%) rotate(45deg);
+      transform: translate(29.29%,-100%) rotate(45deg);
+    }
+
+    @m lb {
+      left: 0;
+      bottom: 0;
+      -webkit-transform-origin: right top;
+      -moz-transform-origin: right top;
+      transform-origin: right top;
+      -webkit-transform: translate(-29.29%,100%) rotate(45deg);
+      -moz-transform: translate(-29.29%,100%) rotate(45deg);
+      transform: translate(-29.29%,100%) rotate(45deg);
+    }
+
+    @m rb {
+      right: 0;
+      bottom: 0;
+      -webkit-transform-origin: left top;
+      -moz-transform-origin: left top;
+      transform-origin: left top;
+      -webkit-transform: translate(29.29%,100%) rotate(-45deg);
+      -moz-transform: translate(29.29%,100%) rotate(-45deg);
+      transform: translate(29.29%,100%) rotate(-45deg);
+    }
+
+  }
+}

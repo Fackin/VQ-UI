@@ -4,7 +4,7 @@
       <p class="side-nav-title">{{ title }}</p>
       <div class="side-nav-items" v-for="(nav, ind) in data[title]" v-if="nav.desc" :key="ind">
         <router-link :class="$route.name===nav.name ? 'active' : ''" v-if="nav.name" :to="{name: nav.name}">{{ nav.desc }}</router-link>
-        <p v-else class="side-nav.config-group">{{nav.desc}}</p>
+        <p v-else class="side-nav-group">{{nav.desc}}</p>
         <div v-for="(item, index) in nav.items" :key="index">
           <router-link :to="{name: item.name}" :class="$route.name===item.name ? 'active' : ''" class="side-nav-component">{{item.desc}}</router-link>
         </div>

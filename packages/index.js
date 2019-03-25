@@ -6,10 +6,12 @@
  */
 import VqCol from './col/index';
 import VqRow from './row/index';
+import VqAnglesign from './anglesign/index';
 
 const components = [
   VqCol,
-  VqRow
+  VqRow,
+  VqAnglesign
 ];
 
 const install = function (Vue) {
@@ -24,5 +26,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default{
   install,
   VqCol,
-  VqRow
+  VqRow,
+  VqAnglesign
 }

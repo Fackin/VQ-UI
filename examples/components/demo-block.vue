@@ -56,6 +56,7 @@ export default {
     font-size: 12px;
     padding: 10px 0;
     background-color: #FAFBFC;
+    cursor: pointer;
   }
 
   .docs-demo__code,

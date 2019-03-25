@@ -12,5 +12,16 @@
       "path": "/test",
       "desc": "测试"
     }
-  ]
+  ],
+  "组件": [{
+    "desc": "视图组件",
+    "path": "/component",
+    "items": [
+      {
+        "desc": "Anglesign 角签",
+        "name": "anglesign",
+        "path": "/anglesign"
+      }
+    ]
+  }]
 }
